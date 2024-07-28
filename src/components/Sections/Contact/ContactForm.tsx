@@ -1,5 +1,5 @@
-import { FC, memo, useCallback, useMemo, useState } from 'react';
 import emailjs from 'emailjs-com';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -24,11 +24,11 @@ const ContactForm: FC = memo(() => {
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const { name, value } = event.target;
+      const {name, value} = event.target;
 
-      const fieldData: Partial<FormData> = { [name]: value };
+      const fieldData: Partial<FormData> = {[name]: value};
 
-      setData({ ...data, ...fieldData });
+      setData({...data, ...fieldData});
     },
     [data],
   );
@@ -51,7 +51,7 @@ const ContactForm: FC = memo(() => {
           'service_bbg065c', // Replace with your EmailJS service ID
           'template_calnsw1', // Replace with your EmailJS template ID
           templateParams,
-          'kxvnPBGUAy_HXZ4_a' // Replace with your EmailJS user ID
+          'kxvnPBGUAy_HXZ4_a', // Replace with your EmailJS user ID
         );
 
         if (response.status !== 200) {
@@ -74,7 +74,15 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Your Name" required type="text" value={data.name} />
+      <input
+        className={inputClasses}
+        name="name"
+        onChange={onChange}
+        placeholder="Your Name"
+        required
+        type="text"
+        value={data.name}
+      />
       <input
         autoComplete="email"
         className={inputClasses}
@@ -98,9 +106,8 @@ const ContactForm: FC = memo(() => {
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-        type="submit"
         disabled={loading}
-      >
+        type="submit">
         {loading ? 'Sending...' : 'Send Message'}
       </button>
       {error && <div className="text-red-500 text-sm">{error}</div>}

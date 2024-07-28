@@ -340,7 +340,7 @@ export const devExp: TimelineItem[] = [
           level Python programming. Basic HTML and CSS programming. Comfortable with VSCode text editor.<br></br>- Check
           out my HyperionDev portfolio{' '}
           <strong>
-            <a href="https://www.hyperiondev.com/portfolio/101715/" className="hover-hyperion">
+            <a className="hover-hyperion" href="https://www.hyperiondev.com/portfolio/101715/">
               here!
             </a>
           </strong>
