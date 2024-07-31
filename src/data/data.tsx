@@ -109,15 +109,17 @@ export const aboutData: About = {
   During those times I wasnt set on what I wanted to do for a career and thought of the stable or well paid jobs,
   however, during lockdown I found an interest for coding while I was killing time playing a game, and decided this is
   what I wanted to do. I tend to pick things up pretty quickly, and so this could be a valuable quality to have
-  especially in an industry like this where everything is constantly evolving. So when my work is done for the day I can
-  take the intense stressful route and play some competitive video games or relax with some therapeutic origami. `,
+  especially in an industry like this where everything is constantly being updated. I've picked up skills in various 
+  programming languages such as Java, Javascript, Python and more through courses in my degree and personal projects. 
+  So when my work is done for the day I can take the intense stressful route and play some competitive video games or 
+  relax with some therapeutic origami. `,
   aboutItems: [
     {label: 'Location', text: 'London, United Kingdom', Icon: MapIcon},
     {label: 'Age', text: '21', Icon: CalendarIcon},
     {label: 'Nationality', text: 'British', Icon: FlagIcon},
     {label: 'Interests', text: 'Football, Origami, Gaming', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Birmingham', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Student/Unemployed', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Unemployed', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -147,14 +149,14 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 5,
+        level: 6,
       },
       {
         name: 'HTML & CSS',
         level: 6,
       },
       {
-        name: 'Javascript',
+        name: 'Typscript/Javascript',
         level: 7,
       },
     ],
@@ -410,7 +412,7 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      text: 'Testimonials coming soon...',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
   ],
