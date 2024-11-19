@@ -73,7 +73,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a London based <strong className="text-stone-100">Software Developer</strong> graduate from{' '}
+        I'm a London based <strong className="text-stone-100">Software Developer</strong> and graduate from{' '}
         <strong className="text-stone-100">The University of Birmingham</strong> looking to contribute to real world
         projects which make a difference.
       </p>
@@ -86,7 +86,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/asadRizviResume.pdf',
+      href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -106,13 +106,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I am an enthusiastic software developer who is eager to learn and evolve in this industry. I didn't
   always have an interest in programming, in fact I have had multiple career choice changes throughout my teenage years.
-  During those times I wasnt set on what I wanted to do for a career and thought of the stable or well paid jobs,
+  During those times I wasn't set on what I wanted to do for a career and thought of the stable or well paid jobs,
   however, during lockdown I found an interest for coding while I was killing time playing a game, and decided this is
   what I wanted to do. I tend to pick things up pretty quickly, and so this could be a valuable quality to have
   especially in an industry like this where everything is constantly being updated. I've picked up skills in various 
   programming languages such as Java, Javascript, Python and more through courses in my degree and personal projects. 
-  So when my work is done for the day I can take the intense stressful route and play some competitive video games or 
-  relax with some therapeutic origami. `,
+  `,
   aboutItems: [
     {label: 'Location', text: 'London, United Kingdom', Icon: MapIcon},
     {label: 'Age', text: '21', Icon: CalendarIcon},
@@ -149,7 +148,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 6,
+        level: 7,
       },
       {
         name: 'HTML & CSS',
@@ -170,7 +169,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Python',
-        level: 7,
+        level: 6,
       },
       {
         name: 'Java',
@@ -183,7 +182,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'PostgreSQL',
-        level: 5,
+        level: 7,
       },
       {
         name: 'SQL',
@@ -222,9 +221,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage3,
   },
   {
-    title: 'In development...',
-    description: '',
-    url: 'https://reactresume.com',
+    title: 'Project Management System',
+    description:
+      'A full stack application with full CRUD functionality. Includes user login/ signup authentication, user invitation services and messaging services. Languages: Java, Javascript, CSS',
+    url: 'https://github.com/Asad11014/projectManagementSystem',
     image: porfolioImage4,
   },
   {
@@ -292,7 +292,7 @@ export const education: TimelineItem[] = [
 
 export const devExp: TimelineItem[] = [
   {
-    date: 'June 2024 - Present',
+    date: 'June 2024 - August 2024',
     location: 'Al-Raza Limited - Online',
     title: 'Web Development Intern',
     content: (
@@ -301,18 +301,6 @@ export const devExp: TimelineItem[] = [
         the startup by updating website, attending client meetings, and designing mockup solutions for client needs.
         <br></br>- Skills learnt: (So far) Creating excellent client relations through zoom calls and meetings. Ability
         to work collaboratively by understanding existing code and adding basic features.
-      </p>
-    ),
-  },
-  {
-    date: 'May 2024 -  Present',
-    location: 'Online',
-    title: 'FreeCodeCamp - Responsive Web Design',
-    content: (
-      <p>
-        - Languages & technologies: HTML, CSS<br></br>- Objectives: Learn advanced HTML and CSS through guided projects
-        as well as certified independant projects.<br></br>- Skills learnt: (So far) Intermediate HTML and CSS
-        programming.
       </p>
     ),
   },
@@ -362,45 +350,25 @@ export const experience: TimelineItem[] = [
     date: 'October 2021 - May 2022',
     location: 'The Pathways Group - Birmingham',
     title: 'Administrator',
-    content: (
-      <p>
-        - Updated client qualifications using Excel and Pics.<br></br>- Print, post and package client certificates.
-        <br></br>- Organise dated files.<br></br>- Scan and upload client qualifications
-      </p>
-    ),
+    content: <p></p>,
   },
   {
     date: 'October 2021 - December 2021',
     location: 'Masters - Birmingham',
     title: 'Administrator/Receptionist',
-    content: (
-      <p>
-        - Updated patients medical records after receiving the COVID vaccine.<br></br>- Checked in patients into the
-        vaccine centre.<br></br>- Exceptional communication skills with patients and staff.
-      </p>
-    ),
+    content: <p></p>,
   },
   {
     date: 'June 2019 - June 2019',
     location: 'Hatch End Dental Practice - London',
     title: 'Receptionist',
-    content: (
-      <p>
-        - Book appointments for patients.<br></br>- Update patients with appointment dates.<br></br>- Cancel
-        appointments for patients.
-      </p>
-    ),
+    content: <p></p>,
   },
   {
     date: 'May 2018 - May 2018',
     location: 'Santander (Preston Road) - London',
     title: 'Assistant',
-    content: (
-      <p>
-        - Work with sensitive information.<br></br>- Customer service (greetings, offering help with the use of ATMs
-        etc.)
-      </p>
-    ),
+    content: <p></p>,
   },
 ];
 
@@ -411,8 +379,8 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Testimonials coming soon...',
+      name: 'Raza Bhojani (Founder of Al-Raza Limited)',
+      text: 'Throughout your internship, you have demonstrated remarkable adaptability and professionalism, navigating the challenges of remote work with ease. Your ability to collaborate effectively, manage your time, and deliver high-quality work has been truly commendable. Your fresh perspectives and innovative ideas have significantly contributed to our projects, and your enthusiasm has been a source of inspiration for our entire team.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
   ],
